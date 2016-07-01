@@ -34,6 +34,42 @@ namespace NI_Week1
             this.est_year = eest_year;
             return;
         }
+
+        public static bool operator <(FootballClub fc1, FootballClub fc2)
+        {
+            var thisName = fc1.getName().ToLower();
+            var otherName = fc2.getName().ToLower();
+            var thisCity = fc1.getCity().ToLower();
+            var otherCity = fc2.getCity().ToLower();
+            var thisCountry = fc1.getCountry().ToLower();
+            var otherCountry = fc2.getCountry().ToLower();
+
+            if (thisName.CompareTo(otherName).Equals(fc1.getName().ToLower())) return true;
+            if (!thisName.CompareTo(otherName).Equals(fc2.getName().ToLower())) return false;
+
+            if (thisCity.CompareTo(otherCity).Equals(c1.getCity().ToLower())) return true;
+            if (!thisCity.CompareTo(otherCity).Equals(c2.getCity().ToLower())) return false;
+
+            if (thisCountry.CompareTo(otherCountry).Equals(c1.getCountry().ToLower())) return true;
+            if (!thisCountry.CompareTo(otherCountry).Equals(c2.getCountry().ToLower())) return false;
+
+            if (fc1.getEST() < fc2.getEST()) return true;
+            if (fc1.getEST() > fc2.getEST()) return false;
+            else return false;
+        }
+
+        public static bool operator >(FootballClub fc1, FootballClub fc2)
+        {
+            return !(fc1 < fc2);
+        }
+
+        public bool Equals(FootballClub fc)
+        {
+            if (this.getName().Equals(fc.getName()) && this.getCity().Equals(fc.getCity()) && this.getCountry().Equals(fc.getCountry()) && this.getEST() == fc.getEST())
+                return true;
+            else return false;
+        }
+
     }
 
     public class Company : IComparable
@@ -59,6 +95,40 @@ namespace NI_Week1
             this.activity = aactivity;
             this.country = ccountry;
         }
+
+        public static bool operator <(Company c1, Company c2)
+        {
+            var thisName = c1.getName().ToLower();
+            var otherName = c2.getName().ToLower();
+            var thisActivity = c1.getActivity().ToLower();
+            var otherActivity = c2.getActivity().ToLower();
+            var thisCountry = c1.getCountry().ToLower();
+            var otherCountry = c2.getCountry().ToLower();
+
+            if (thisName.CompareTo(otherName).Equals(c1.getName().ToLower())) return true;
+            if (!thisName.CompareTo(otherName).Equals(c2.getName().ToLower())) return false;
+
+            if (thisActivity.CompareTo(otherActivity).Equals(c1.getActivity().ToLower())) return true;
+            if (!thisActivity.CompareTo(otherActivity).Equals(c2.getActivity().ToLower())) return false;
+
+            if (thisCountry.CompareTo(otherCountry).Equals(c1.getCountry().ToLower())) return true;
+            if (!thisCountry.CompareTo(otherCountry).Equals(c2.getCountry().ToLower())) return false;
+
+            else return false;
+        }
+
+        public static bool operator >(Company c1, Company c2)
+        {
+            return !(c1 < c2);
+        }
+
+        public bool Equals(Company c)
+        {
+            if (this.getName().Equals(c.getName()) && this.getActivity().Equals(c.getActivity()) && this.getCountry().Equals(c.getCountry()))
+                return true;
+            else return false;
+        }
+
     }
 
     public class Person : IComparable
@@ -152,12 +222,12 @@ namespace NI_Week1
             var otherName = p2.nameP.ToLower();
 
             if (thisName.CompareTo(otherName).Equals(p1.nameP.ToLower())) return true;
-            if (!thisName.CompareTo(otherName).Equals(p1.nameP.ToLower())) return true;
+            if (!thisName.CompareTo(otherName).Equals(p1.nameP.ToLower())) return false;
 
             if (getAge(p1) < getAge(p2)) return true;
             if (getAge(p1) > getAge(p2)) return false;
 
-            return false;
+            else return false;
         }
 
         public static bool operator >(Person p1, Person p2)
@@ -168,7 +238,7 @@ namespace NI_Week1
         {
             if (this.getGender() == person.getGender() && getAge(this) == getAge(person) && this.nameP.Equals(person.nameP))
                 return true;
-            return false;
+            else return false;
         }
 
 
@@ -182,7 +252,6 @@ namespace NI_Week1
             }
         }
     }
-
 
     public class Parsers
     {
@@ -207,7 +276,6 @@ namespace NI_Week1
                         int year = Int32.Parse(words[i + 6]);
                         int month = Int32.Parse(words[i + 7]);
                         int day = Int32.Parse(words[i + 8]);
-
                         q.Enqueue(new Person(firstName, lastName, new DateTime(year, month, day), gender));
                     }
                 }

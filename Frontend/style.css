@@ -1,0 +1,138 @@
+ul {
+    list-style: none;
+}
+
+.top-5 {
+    margin-left: 10%;
+}
+
+.up-image {
+    position: relative;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.up-slogan {
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+    color: red;
+    font-family: Calibri;
+}
+
+.slogan1 {
+    font-size: 30px;
+}
+
+.slogan2 {
+    font-size: 20px;
+}
+
+.price {
+    background-color: #337ab7;
+    color: white;
+    margin: 5px;
+    margin-right: 30px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.top-rate {
+    position: absolute;
+    height: 30px;
+}
+
+.top-price {
+    background-color: #337ab7;
+    color: white;
+    margin: 5px;
+
+    padding: 5px;
+
+    border-radius: 3px;
+}
+
+.top-5 {
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 290px;
+    padding-top: 30px;
+    color: white;
+}
+
+.choise {
+    height: 40px;
+}
+
+.choise2 {
+    height: 60px;
+}
+
+.footer-icon {
+    height: 50px;
+    float: left;
+}
+
+.footer-av {
+    color: #337ab7;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.table-cell {
+    padding: 10px;
+}
+
+.ch {
+    font-weight: 600;
+}
+
+.products {
+    /*position:absolute;*/
+    height: 50px;
+    margin-top: 100px;
+
+}
+
+.slides_container {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+.views {
+    list-style: none;
+    margin: 20%;
+    margin-top: 5%;
+}
+
+.desc-short {
+    right: -600px;
+}
+
+.slider {
+    float: none;
+    z-index: 0;
+    position: absolute;
+}
+
+#slider {
+    float: none;
+    z-index: 0;
+    position: absolute;
+}
+
+#myDialog {
+    width: 300px;
+}
+
+.top-image {
+    height: 30px;
+}
+
+.desc-s {
+    padding-left: 3%;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="glyphicon glyphicon-th-list" style="color:#337ab7"></span>
+            </button>
+            <a class="navbar-brand " href="#">MPenStore</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Категорії
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Пір`яний</a></li>
+                        <li><a href="#">Сенсорний</a></li>
+                        <li><a href="#">Монітор-планшет</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Акція</a></li>
+                <li><a href="#">Новинки</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-heart" title="Вподобані"></span><span
+                        id="like-cart-badge" style="visibility: hidden" class="badge">0</span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" title="Кошик"></span><span
+                        id="shopping-cart-badge" style="visibility: hidden" class="badge">0</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+
+    <div class="tablet">
+        <div class="col-sm-6 leftpanel">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#main" data-toggle="tab">Все про товар</a></li>
+                <li><a href="#more" data-toggle="tab">Характеристики</a></li>
+                <li><a href="#view" data-toggle="tab">Огляд</a></li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="main">
+
+                    <div class="preview" align="center">
+                        <img id="preview"
+                             src="http://i1.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561230.jpg"
+                             style="width: 70%;" alt=""/>
+                    </div>
+
+                    <div class="thumbnails">
+                        <img onclick="getElementById('preview').src=getElementById('img1').src" id="img1"
+                             src="http://i1.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561230.jpg"
+                             width="140" alt=""/>
+                        <img onclick="getElementById('preview').src=getElementById('img2').src" id="img2"
+                             src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561485.jpg"
+                             width="140" alt=""/>
+                        <img onclick="getElementById('preview').src=getElementById('img3').src" id="img3"
+                             src="http://i1.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561615.jpg"
+                             width="140" alt=""/>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="more">
+                    <h4>Техничні характеристики Wacom Cintiq 22HD Touch (DTH-2200)</h4>
+                    <table border="0" cellspacing="22" cellpadding="2">
+
+                        <tr>
+                            <td class="table-cell ch">Тип вводу</td>
+                            <td class="table-cell">Cенсорний<br>Пір`яний</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Клас</td>
+                            <td class="table-cell">Професійний</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Розмір планшета</td>
+                            <td class="table-cell">1920x1080<br>5080 рядків / дюйм</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Розмір робочої поверхні</td>
+                            <td class="table-cell">479 x 271 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Кількість рівнів чутливості до натискання</td>
+                            <td class="table-cell">2048 на наконечнику пера і ластика</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Чутливість до нахиляння</td>
+                            <td class="table-cell">± 60 рівнів</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Точність позіціонування пера</td>
+                            <td class="table-cell">± 0.5 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Інтерфейс</td>
+                            <td class="table-cell">USB</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Додаткові можливості</td>
+                            <td class="table-cell">Kлавіші ExpressKeys<br>
+                                Touch Strips<br>
+                                Кругове меню<br>
+                                Режим точності<br>
+                                Переключення між екранами <br>
+                                Multi-touch
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Колір</td>
+                            <td class="table-cell">Чорний</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Габарити</td>
+                            <td class="table-cell">650 x 400 x 67.5 мм</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Вага</td>
+                            <td class="table-cell">8400 г</td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Комплектація</td>
+                            <td class="table-cell">Планшет Cintiq 22HD Touch<br>
+                                підставка, що обертається<br>
+                                Кабель DVI-D<br>
+                                Кабель USB<br>
+                                Блок живлення<br>
+                                Перо GripPEN<br>
+                                Підставка для пера<br>
+                                Запасні пір'я
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="table-cell ch">Гарантія</td>
+                            <td class="table-cell">36 місяців</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="view">
+                    <h4>Досягніть максимуму новаторського творення</h4>
+                    Екран Full HD з діагоналлю 21.5 "і роздільною здатністю 1920x1080, 16.7 мільйонів відтінків кольору
+                    - Cintiq 22HD Touch пропонує гаму інноваційних можливостей і стане підмогою у вашій роботі. Дійсно,
+                    він стане природним продовженням відчуттів художника або дизайнера, здатним запропонувати почуття
+                    бездоганної творчої свободи при створенні образів на екрані: це комбінація повного спектра
+                    можливостей, яка допоможе творчій людині перейнятися точністю створюваного цифрового зображення і
+                    зрозуміти чарівність Cintiq 22HD Touch.
+
+                    <h4>Повне занурення в творчий процес</h4>
+                    Насолоджуйтеся можливістю точного та інтуїтивного контролю створюваного на екрані образу завдяки
+                    використанню чутливого до тиску пера Grip Pen і функції Multi-Touch для позиціонування та навігації
+                    по зображенню на екрані.
+
+                    <h4>Комфорт творчого процесу</h4>
+                    Ергономічна підставка пропонує як альбомну, так і портретну орієнтацію дисплея, а також зручну
+                    настройку проміжних позицій для забезпечення повноцінного комфорту при роботі.
+
+                    <h4>Максимальна продуктивність</h4>
+                    Виконуйте роботу легко і швидко завдяки налаштованим клавішах ExpressKeys, сенсорним смужках Touch
+                    Strip і функції Multi-Touch, які дозволять одним дотиком виконувати команди, що відповідають вашим
+                    улюбленим клавіатурним сполученням.
+
+                    <h4>Операційні Системи</h4>
+                    Windows 7, 8 (32/64 bit)
+                    Mac: OS X v10.6.8 і новіше (з процесором Intel)
+                    <table>
+                        <tr>
+                            <td><img src="http://i1.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561230.jpg"
+                                     width="200" alt="1144953 1 2x"></td>
+                            <td><img src="https://db.tt/O3RWrryC" width="200" alt="1144953 1 2x"></td>
+                            <td><img src="https://db.tt/SHxGz3XN" width="200" alt="1144953 1 2x"></td>
+                            <td><img src="https://db.tt/K84fofHE" width="200" alt="1144953 1 2x"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 desc-s">
+        <div class="">
+            <h4>Виробник:</h4>
+            <img class="choise" src="http://laptoplabsbd.com/wp-content/uploads/2016/01/logo-wacom.png">
+            <hr>
+            <h4>Cтисла характеристика:</h4>
+            <ul>
+                <li><strong>Клас:</strong> Професійний</li>
+                <li><strong>Розмір планшета:</strong> 1920x1080<br>5080 рядків / дюйм</li>
+                <li><strong>Розміри робочої поверхні:</strong> 479 x 271 мм</li>
+                <li><strong>Колір:</strong> Чорний</li>
+            </ul>
+            <hr>
+            <h4>Доставка:</h4>
+
+            <p><strong>Усі типи доставки на цей товар безкоштовні!</strong></p>
+            <hr>
+            <button class="btn btn-success btn-lg buy" onclick="changeBadge()" title="Купити"><span
+                    class="glyphicon glyphicon-shopping-cart"></span> Купити
+            </button>
+            <button class="btn btn-danger btn-lg like" onclick="totalLikes()" title="Уподобати"><span
+                    class="glyphicon glyphicon-heart"></span> Уподобати
+            </button>
+            </li>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid ">
+    <div class="footer-content ">
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Оплата та доставка</a></p>
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Сертифікати продажу</a></p>
+
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+        </div>
+
+    </div>
+</div>
+<section>
+    <hr>
+    <h3 align="center">Вас може зацікавити...</h3>
+
+    <div class="top-5">
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img onmouseover="mouseOverFunction(this)" onmouseleave="mouseLeftFunction(this)" id="main-image"
+                         class="main-image img-responsive"
+                         src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561250.jpg"
+                         style="width: 60%;" alt="Image">
+                    <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
+                    <span class="top-price">74 975 грн</span>
+
+                    <button class="btn btn-success buy" title="Купити"><span
+                            class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img onmouseover="mouseOverFunction(this)" onmouseleave="mouseLeftFunction(this)"
+                         src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561250.jpg"
+                         class="img-responsive" style="width: 60%;" alt="Image">
+                    <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
+                    <span class="top-price">74 975 грн</span>
+
+                    <button class="btn btn-success buy" title="Купити"><span
+                            class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <img onmouseover="mouseOverFunction(this)" onmouseleave="mouseLeftFunction(this)"
+                         src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561250.jpg"
+                         class="img-responsive" style="width: 60%;" alt="Image">
+                    <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
+                    <span class="top-price">74 975 грн</span>
+
+                    <button class="btn btn-success buy" title="Купити"><span
+                            class="glyphicon glyphicon-shopping-cart"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<footer class="container-fluid ">
+    <div class="footer-content ">
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Про нас</a></p>
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Конфіденційність</a></p>
+
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Правила та умови</a></p>
+
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+            <p><a class="link-footer" href="#">Спільнота</a></p>
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+        </div>
+        <div class="col-sm-2 sidenav footer-block">
+            <div class="footer-icon"><img class="footer-icon" src="https://db.tt/yUqetrUo"></div>
+            <span class="footer-av">Powered by<br>Elizabeth Lemeshko</span>
+        </div>
+    </div>
+</footer>
+</html>

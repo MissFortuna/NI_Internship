@@ -1,3 +1,78 @@
+/*JQuery*/
+var wanna_buy = 0;
+var like_in = 0;
+$(document).ready(function(){
+
+    $(".buy").click(function(){
+        checkQuantity();
+        $("#shopping-cart-badge").text(++wanna_buy);
+        if (wanna_buy > 0) $("#shopping-cart-badge").css("visibility", "visible");
+    });
+
+    $(".like").click(function(){
+        checkLikes();
+        $("#like-cart-badge").text(++like_in);
+        if (like_in > 0) $("#like-cart-badge").css("visibility", "visible");
+    });
+
+    $('#shopping').on('change', function() {
+        var filterShipping = $("#shopping").val();
+        var typeOfShipping = $(".type-of-shipping");
+        if (filterShipping == "Shipping") {
+            for (var i = 0; i < typeOfShipping.length; i++) {
+                if (i % 2 == 0) {
+                    typeOfShipping[i].innerHTML = "Shipping to Ukraine"
+                }
+            }
+        }
+    });
+
+    $(".img-responsive").hover(function () {
+            $(this).attr("src",src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561485.jpg" );
+    },
+    function(){
+        $(this).attr("src",src="http://i2.rozetka.ua/goods/11561/Wacom_Cintiq_22HD_Touch_images_11561250.jpg" );
+    });
+
+    $(".image-prev").click(function(){
+        var img=$(this).attr("src");
+        $("#preview").attr("src", img);
+    });
+
+
+    $(".send").click(function(){
+        $("#myDialog").show(500);
+    });
+
+    $(".res").click(function(){
+        $("#myDialog").hide(500);
+    });
+
+});
+
+function checkQuantity() {
+    if (wanna_buy > 4) {
+        $(".buy").prop("disabled",true);
+        alert("Ви вичерпали ліміт кошика. Оформіть замовлення або зредагуйте обране.");
+    }
+    else {
+        $(".buy").prop("disabled",false);
+    }
+}
+
+function checkLikes() {
+    if (like_in > 9) {
+            $('.like').prop("disabled",true);
+        alert("Ви вичерпали ліміт уподобань.");
+    }
+    else {
+        $('.like').prop("disabled",false);
+    }
+}
+
+
+
+/* DOM
 var wanna_buy = 0;
 var like_in = 0;
 
@@ -70,3 +145,5 @@ function openM() {
 function closeM() {
     document.getElementById("myDialog").close();
 }
+*/
+

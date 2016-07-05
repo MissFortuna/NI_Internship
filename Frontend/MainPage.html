@@ -65,9 +65,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like" title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -87,9 +87,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy"  title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -108,9 +108,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy"  title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -129,9 +129,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy"  title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -150,9 +150,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy"  title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -170,9 +170,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-success buy" onclick="changeBadge()" title="Купити"><span
+                    <button class="btn btn-success buy"  title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
                 </div>
             </div>
@@ -190,9 +190,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
-                    <button class="btn btn-info" onclick="openM()" title="Нагадати"><span
+                    <button class="btn btn-info send"  title="Нагадати"><span
                             class="glyphicon glyphicon-comment"></span></button>
                 </div>
             </div>
@@ -210,9 +210,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like" title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
-                    <button class="btn btn-info" onclick="openM()" title="Нагадати"><span
+                    <button class="btn btn-info send" title="Нагадати"><span
                             class="glyphicon glyphicon-comment"></span></button>
                 </div>
             </div>
@@ -230,9 +230,9 @@
 
                     <p class="type-of-shipping"></p>
                     <span class="price">74 975 грн</span>
-                    <button class="btn btn-danger like" onclick="totalLikes()" title="Уподобати"><span
+                    <button class="btn btn-danger like"  title="Уподобати"><span
                             class="glyphicon glyphicon-heart"></span></button>
-                    <button class="btn btn-info" onclick="openM()" title="Нагадати"><span
+                    <button class="btn btn-info send" title="Нагадати"><span
                             class="glyphicon glyphicon-comment"></span></button>
                 </div>
             </div>
@@ -277,7 +277,7 @@
         </label>
 
         <!--Week 2, Task 5-->
-        <dialog id="myDialog">
+        <div id="myDialog" style="display: none">
             <form class="form-horizontal">
                 <fieldset>
                     <legend>Лист про нагадування:</legend>
@@ -305,17 +305,17 @@
 
                     <div class="form-group">
                         <div class="col-lg-10 col-lg-offset-2">
-                            <button type="reset" onclick="closeM()" class="btn btn-default">Відмінити</button>
+                            <button type="reset" class="btn btn-default res">Відмінити</button>
                             <button type="submit" class="btn btn-primary">Нагадати</button>
                         </div>
                     </div>
                 </fieldset>
             </form>
-        </dialog>
+        </div>
 
         <hr>
         <h4>Cпосіб отримання: </h4>
-        <select id="shopping" onchange="shippingFunction()">>
+        <select id="shopping">
             <option value="Yourself">Самовивіз з магазину</option>
             <option value="Specific_adress">Доставка на адресу</option>
             <option value="NovaPoshta">Самовивіз з відділення "Нова Пошта"</option>
@@ -350,7 +350,7 @@
                     <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
                     <span class="top-price">74 975 грн</span>
 
-                    <button class="btn btn-success" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
@@ -368,7 +368,7 @@
                     <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
                     <span class="top-price">74 975 грн</span>
 
-                    <button class="btn btn-success" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
@@ -385,7 +385,7 @@
                     <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
                     <span class="top-price">74 975 грн</span>
 
-                    <button class="btn btn-success" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
@@ -402,7 +402,7 @@
                     <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
                     <span class="top-price">74 975 грн</span>
 
-                    <button class="btn btn-success" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
                 </div>
             </div>
@@ -419,7 +419,7 @@
                     <a href="#"><p>Wacom Cintiq 22HD Touch</p></a>
                     <span class="top-price">74 975 грн</span>
 
-                    <button class="btn btn-success" title="Купити"><span
+                    <button class="btn btn-success buy" title="Купити"><span
                             class="glyphicon glyphicon-shopping-cart"></span></button>
 
                 </div>

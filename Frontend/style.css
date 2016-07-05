@@ -127,6 +127,9 @@ footer {
 
 #myDialog {
     width: 300px;
+    border: ridge;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 .top-image {

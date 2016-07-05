@@ -48,6 +48,11 @@ $(document).ready(function(){
         $("#myDialog").hide(500);
     });
 
+    $(".ccolor").click(function(){
+        $(".ccolor").css("stroke","gray");
+        $(this).css("stroke","pink");
+    });
+
 });
 
 function checkQuantity() {

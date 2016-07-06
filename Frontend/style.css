@@ -68,7 +68,7 @@ footer {
 }
 
 .choise2 {
-    height: 60px;
+    height: 160px;
 }
 
 .footer-icon {
@@ -138,4 +138,19 @@ footer {
 
 .desc-s {
     padding-left: 3%;
+}
+.itimage{
+    float:left;
+}
+.itchar{
+    float:left;
+}
+.itimpo{
+    height: 30px;
+}
+.itcolor{
+    padding-top: 10px;
+}
+.box{
+    padding-left: 50px;
 }
